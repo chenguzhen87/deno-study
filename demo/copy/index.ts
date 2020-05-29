@@ -4,7 +4,7 @@ const source = await Deno.open("my_file.txt");
 const buffer = new Deno.Buffer();
 const bytesCopied1 = await Deno.copy(source, Deno.stdout);
 const bytesCopied2 = await Deno.copy(source, buffer);
-
+console.log(source);
 // param src The source to copy from
 
 // param dst The destination to copy to
