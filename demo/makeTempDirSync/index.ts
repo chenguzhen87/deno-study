@@ -1,6 +1,6 @@
-// Creates a new temporary directory in the default directory for temporary files (see also Deno.dir("temp")), unless dir is specified. Other optional options include prefixing and suffixing the directory name with prefix and suffix respectively.
+// Synchronously creates a new temporary directory in the default directory for temporary files (see also Deno.dir("temp")), unless dir is specified. Other optional options include prefixing and suffixing the directory name with prefix and suffix respectively.
 
-// This call resolves to the full path to the newly created directory.
+// The full path to the newly created directory is returned.
 
 // Multiple programs calling this function simultaneously will create different directories. It is the caller's responsibility to remove the directory when no longer needed.
 // Requires allow-write permission.
