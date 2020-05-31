@@ -15,10 +15,10 @@ f.close();
 // Second argument can be used to tune size of a buffer. Default size of the buffer is 32kB.
 
 let file = await Deno.open("test.txt");
-const iter = Deno.iter(file, {
-  bufSize: 1024 * 1024,
+const iter = Deno.iterSync(file, {
+  bufSize: 1024 * 1024
 });
-for await (const chunk of iter) {
+for (const chunk of iter) {
   console.log(chunk);
 }
-file.close();
+f.close();
