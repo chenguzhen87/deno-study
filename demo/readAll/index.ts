@@ -1,4 +1,6 @@
+// Read Reader r until EOF (null) and resolve to the content as Uint8Array`.
 // Example from stdin
+// deno run --allow-read index.ts
 const stdinContent = await Deno.readAll(Deno.stdin);
 console.log(stdinContent);
 
