@@ -4,4 +4,4 @@
 // Requires allow-read and allow-write permissions.
 // deno run --allow-read --allow-write index.ts
 
-Deno.renameSync("./old/path", "./new/path");
+Deno.renameSync("old/path", "new/path");
