@@ -1,6 +1,9 @@
 // deno run index.ts
 console.log(Deno);
-console.log(`this:${this}`);
+
+// https://github.com/denoland/deno/issues/6150
+console.log(`this:${this}`); // undefined
+
 console.log(`self:${self}`);
 console.log(`globalThis:${globalThis}`);
 
