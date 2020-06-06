@@ -1,5 +1,9 @@
 // deno run index.ts
 console.log(Deno);
+console.log(`this:${this}`);
+console.log(`self:${self}`);
+console.log(`globalThis:${globalThis}`);
+
 
 // {
 //     Buffer: [Function: Buffer],
