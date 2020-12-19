@@ -1,1 +1,4 @@
-console.log("hello chenguzhen87")
+import name from "./de.ts"
+while(true){
+    console.log(name)
+}
